@@ -1,0 +1,60 @@
+.home_main_container{
+  background-color: rgba(226, 232, 236, 0.89);
+  border-radius: 78px;
+}
+
+.home_txt_bold{
+  display: block;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 71px;
+  color: rgba(0, 57, 43, 0.842);
+  margin-top: 3em;
+}
+.home_txt_light{
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: 300;
+font-size: 1.9em;
+line-height: 1.9em;
+border-left:solid rgba(130, 90, 244, 1) 3px;
+padding-left: 1.6em;
+
+/* or 181% */
+
+color: #0C392B;
+}
+
+.btnGroup{
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+.animation_one{
+  display: flex;
+  position: absolute;
+  right: 18%;
+  bottom: 3em;
+}
+
+@media only screen and (max-width: 876px){
+  .home_txt_bold{
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+  }
+  .home_txt_light{
+    text-align:'center';
+    font-size: 0.8em;
+    border-left:solid rgba(130, 90, 244, 1) 3px;
+    text-align: center;
+  }
+  .animation_one{
+    margin: auto;
+    display: block;
+    position: relative;
+  }
+}
+

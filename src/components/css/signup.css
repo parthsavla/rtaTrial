@@ -1,0 +1,15 @@
+.centerDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .pape-style{
+    padding: 2em;
+    border-radius: 3em;
+    font-family: Roboto Mono;
+    text-align: center;
+  }
+  .centerDiv h2{
+    color: #825af4;
+  }

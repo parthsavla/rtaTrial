@@ -1,0 +1,9 @@
+
+.vertMenuBtn{
+  color:#825AF4;
+}
+.vertMenuBtn:hover{
+  background-color: #825AF4;
+  border-radius: 1.6em;
+  color: white;
+}
