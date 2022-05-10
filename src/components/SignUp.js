@@ -49,9 +49,9 @@ export default function SignUp() {
           <h2>SIGN UP</h2>
           <Stack justifyContent={"center"}>
 
-              <TextField sx={{width:'87%',margin:'10px auto 10px auto',marginBottom:''}} type="email" variant='filled' label="E-Mail" margin='normal' size='small' inputRef={emailRef} required></TextField>
-              <TextField sx={{width:'87%',margin:'10px auto 10px auto'}} type="password" variant='filled' label="Password" margin='normal' size='small' inputRef={passwordRef} error={passwordCheckFlag} required></TextField>
-              <TextField sx={{width:'87%',margin:'10px auto 10px auto'}} type="password" variant='filled' label="Confirm Password" margin='normal' size='small' inputRef={passwordConfirmRef} error={passwordCheckFlag} onChange={handlePasswordChange} required ></TextField>
+              <TextField sx={{width:'100%',margin:'10px auto 10px auto',marginBottom:''}} type="email" variant='filled' label="E-Mail" margin='normal' size='small' inputRef={emailRef} required></TextField>
+              <TextField sx={{width:'100%',margin:'10px auto 10px auto'}} type="password" variant='filled' label="Password" margin='normal' size='small' inputRef={passwordRef} error={passwordCheckFlag} required></TextField>
+              <TextField sx={{width:'100%',margin:'10px auto 10px auto'}} type="password" variant='filled' label="Confirm Password" margin='normal' size='small' inputRef={passwordConfirmRef} error={passwordCheckFlag} onChange={handlePasswordChange} required ></TextField>
               <Button variant='contained' sx={{background:'#825af4',width:"75%",margin:'10px auto 10px auto'}} onClick={handleSubmit}>SignUp</Button>
           </Stack>
         </Paper>

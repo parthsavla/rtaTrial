@@ -37,7 +37,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar 
-        position="fixed" 
+        position="static" 
         sx={{
               width:'100%',
               boxShadow:'none',
@@ -47,10 +47,9 @@ const ResponsiveAppBar = () => {
             }}>
         <Toolbar>
         <Typography
-            variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' },paddingLeft:'9em',paddingTop:'4em' }}
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' },paddingLeft:'5em',paddingTop:'2em',fontSize:'1.5em' }}
           >
             LOGO
           </Typography>
@@ -102,10 +101,10 @@ const ResponsiveAppBar = () => {
            
           </Box>
 
-          <Box sx={{ flexGrow: 0,display: { xs: 'none', md: 'flex' },paddingRight:'9em',paddingTop:'4em' }}>
-            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingRight:'2em'}}>Home</Button>
-            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingLeft:'2em',paddingRight:'2em'}}>About</Button>
-            <Button sx={{color:'#6848c4',paddingLeft:'2em'}}>Contact</Button>
+          <Box sx={{ flexGrow: 0,display: { xs: 'none', md: 'flex' },paddingRight:'4em',paddingTop:'2em' }}>
+            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingRight:'2em',fontSize:'1em'}}>Home</Button>
+            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingLeft:'2em',paddingRight:'2em',fontSize:'1em'}}>About</Button>
+            <Button sx={{color:'#6848c4',paddingLeft:'2em',fontSize:'1em'}}>Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>

@@ -1,6 +1,7 @@
 .home_main_container{
   background-color: rgba(226, 232, 236, 0.89);
-  border-radius: 78px;
+  border-radius: 20px;
+
 }
 
 .home_txt_bold{
@@ -8,22 +9,19 @@
   font-family: Roboto Mono;
   font-style: normal;
   font-weight: 500;
-  font-size: 2.2em;
+  font-size: 2em;
   line-height: 71px;
   color: rgba(0, 57, 43, 0.842);
-  margin-top: 3em;
+ 
 }
 .home_txt_light{
 font-family: Roboto Mono;
 font-style: normal;
 font-weight: 300;
-font-size: 1.9em;
+font-size: 1.5em;
 line-height: 1.9em;
 border-left:solid rgba(130, 90, 244, 1) 3px;
 padding-left: 1.6em;
-
-/* or 181% */
-
 color: #0C392B;
 }
 
@@ -34,27 +32,33 @@ color: #0C392B;
 
 .animation_one{
   display: flex;
-  position: absolute;
-  right: 18%;
+  position: fixed;
+  right: 17em;
   bottom: 3em;
 }
 
 @media only screen and (max-width: 876px){
   .home_txt_bold{
-    font-size: 1em;
+    font-size:2em;
     text-align: center;
     width: 100%;
   }
   .home_txt_light{
     text-align:'center';
-    font-size: 0.8em;
+    font-size: 1.6em;
     border-left:solid rgba(130, 90, 244, 1) 3px;
     text-align: center;
+    padding-left: 0;
+
   }
   .animation_one{
-    margin: auto;
-    display: block;
+    display: inline-block;
     position: relative;
+    margin-left: 6.5em;
+  }
+  .btnGroup{
+    display: flex;
+    justify-content: center;
   }
 }
 

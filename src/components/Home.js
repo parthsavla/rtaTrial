@@ -25,7 +25,7 @@ import ResponsiveNavBar from './ResponsiveNavBar';
 const BtnGetApproved = styled(Button)(({ theme }) => ({
   color: "white",
   backgroundColor: "rgba(130, 90, 244, 1)",
-  padding:"2em",
+  padding:"1.8em",
   fontStyle:'normal',
   fontWeight: 'bold',
   textAlign: "center",
@@ -40,7 +40,7 @@ const BtnGetApproved = styled(Button)(({ theme }) => ({
 
 const BtnHomeSignUp = styled(Button)(({ theme }) => ({
   color: "rgba(130, 90, 244, 1)",
-  padding:"1.7em",
+  padding:"1.5em",
   fontStyle:'normal',
   fontWeight: 'bold',
   textAlign: "center",
@@ -71,24 +71,24 @@ export default function Home() {
 const smallScreen = useMediaQuery('(min-width:600px)');
   return ( 
     <div style={{height:'100%' ,width:"100%"}}>
-      <ResponsiveNavBar/>
+      
       <Grid container 
             className='home_main_container'
             direction={'column'} 
-            justifyContent="center"
-            sx={{margin:"auto",marginTop:"4%"}}
+            justifyContent={"center"}
+            sx={{margin:"auto",marginTop:"1%"}}
             lg={10}
             alignItems={"center"}
           >
-        <Grid item>
-          
+        <Grid item width={"100%"}>
+         <ResponsiveNavBar/>
         </Grid>
-        <Grid item >
-          
-          <div>
-            
+        <Grid item>
+        
+          <div style={{padding:"2em"}}>
             <div className='home_txt_bold'>
-              
+            
+
               <span >Seek Approval for your research</span>
             </div>
             <div className='home_txt_light'>
@@ -123,11 +123,11 @@ const smallScreen = useMediaQuery('(min-width:600px)');
               </Stack>
             </div>
             <div className='animation_one'>
-            <Lottie 
-	            options={defaultOptions}
-              height={350}
-              width={350}
-            />
+              <Lottie 
+	              options={defaultOptions}
+                height={smallScreen?350:250}
+                width={smallScreen?350:250}
+              />
           </div>
           </div>
         </Grid>
