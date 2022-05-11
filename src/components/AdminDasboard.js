@@ -138,9 +138,12 @@ export default function StudentDashboard() {
         <h1 style={{textAlign:"center"}}>Admin Dasboard</h1>
         <Stack direction={"row"} spacing={5} justifyContent={"center"} alignItems={"center"}>
             <div>
-                <Paper sx={{backgroundColor:'#C4C4C4',width:'20em'}} elevation={5}>
+                <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                     <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
-                        Users
+                        Students
+                    </span><br/>
+                    <span >
+                      table for students in the system
                     </span>
                 </Paper>
             </div>
@@ -200,23 +203,33 @@ export default function StudentDashboard() {
         <Grid item  sx={{background:"#E2E8EC"}} width={"90%"} height="auto">
         <Stack direction={'row'} justifyContent={"center"} alignItems={"center"} spacing={4}>
           <div>
-              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em'}} elevation={5}>
+              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                   <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
-                      Users
+                    Instructor
+                  </span><br/>
+                  <span>
+                    table for Instuctor in the system
                   </span>
               </Paper>
           </div>
           <div>
-              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em'}} elevation={5}>
+              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                   <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
-                      Users
+                      Department 
+                  </span><br/>
+                  <span>
+                    table for Department in the system
                   </span>
+
               </Paper>
           </div>
           <div>
-              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em'}} elevation={5}>
+              <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                   <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
-                      Users
+                      Majors
+                  </span><br/>
+                  <span>
+                    table for Majors in the system
                   </span>
               </Paper>
           </div>

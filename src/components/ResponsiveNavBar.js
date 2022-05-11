@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Stack } from '@mui/material';
-
+import { Link } from 'react-router-dom';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -102,9 +102,18 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0,display: { xs: 'none', md: 'flex' },paddingRight:'4em',paddingTop:'2em' }}>
-            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingRight:'2em',fontSize:'1em'}}>Home</Button>
-            <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingLeft:'2em',paddingRight:'2em',fontSize:'1em'}}>About</Button>
-            <Button sx={{color:'#6848c4',paddingLeft:'2em',fontSize:'1em'}}>Contact</Button>
+            <Link to={'/studentDashboard'} style={{textDecoration:'none'}}>
+              <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingRight:'2em',fontSize:'1em'}}>Student </Button>
+            </Link>
+            <Link to={'/supervisorDashboard'} style={{textDecoration:'none'}}>
+              <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingLeft:'2em',paddingRight:'2em',fontSize:'1em'}}>Lec </Button>
+            </Link>
+            <Link to={'/researchDasboard'} style={{textDecoration:'none'}}>
+              <Button sx={{color:'#6848c4',borderRight:'3px #6848c4 solid',borderRadius:'0',paddingLeft:'2em',paddingRight:'2em',fontSize:'1em'}}>Research supervisor </Button>
+            </Link>
+            <Link to={'/adminDashboard'} style={{textDecoration:'none'}}>
+              <Button sx={{color:'#6848c4',paddingLeft:'2em',fontSize:'1em'}}>Admin </Button>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
