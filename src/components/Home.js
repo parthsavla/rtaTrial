@@ -85,10 +85,8 @@ const smallScreen = useMediaQuery('(min-width:600px)');
         </Grid>
         <Grid item>
         
-          <div style={{padding:"2em"}}>
+          <div style={{padding:"1.2em"}}>
             <div className='home_txt_bold'>
-            
-
               <span >Seek Approval for your research</span>
             </div>
             <div className='home_txt_light'>

@@ -136,7 +136,7 @@ export default function StudentDashboard() {
         </Grid>
         <Grid item  sx={{background:"#E2E8EC"}} width={"90%"} height="auto">
         <h1 style={{textAlign:"center"}}>Admin Dasboard</h1>
-        <Stack direction={"row"} spacing={5} justifyContent={"center"} alignItems={"center"} >
+        <Stack direction={{ xs: 'column', md: 'column' ,lg: 'row' }} spacing={4} justifyContent={"center"} alignItems={"center"} >
             <div>
                 <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                     <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
@@ -200,8 +200,8 @@ export default function StudentDashboard() {
             
            
         </Grid>
-        <Grid item  sx={{background:"#E2E8EC" ,paddingBottom:"3em"}} width={"90%"} height="auto">
-        <Stack direction={'row'} justifyContent={"center"} alignItems={"center"} spacing={4}>
+        <Grid item  sx={{background:"#E2E8EC" ,paddingBottom:"3em"}} width="90%" height="auto">
+        <Stack direction={{ xs: 'column', md: 'column' ,lg: 'row'  }} spacing={4}justifyContent={"center"} alignItems={"center"} >
           <div>
               <Paper sx={{backgroundColor:'#C4C4C4',width:'20em',textAlign:'center'}} elevation={5}>
                   <span style={{fontStyle:'normal',fontFamily:'Roboto Mono',fontWeight:'bold',fontSize:'1.3em',padding:'2em'}}>
